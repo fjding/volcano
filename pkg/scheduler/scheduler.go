@@ -71,6 +71,8 @@ func NewScheduler(
 		}
 	}
 
+	// fjdingtest
+
 	cache := schedcache.New(config, schedulerNames, defaultQueue, nodeSelectors)
 	scheduler := &Scheduler{
 		schedulerConf:  schedulerConf,
@@ -80,6 +82,12 @@ func NewScheduler(
 		dumper:         schedcache.Dumper{Cache: cache},
 	}
 
+	// Set up event handlers.
+	//pc.cache.AddEventHandler(
+	//	schedcache.NewSessionEventHandler(pc.cache, pc.schedulePeriod),
+	//)
+
+	// fjiding test
 	return scheduler, nil
 }
 
