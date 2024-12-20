@@ -71,6 +71,8 @@ func NewScheduler(
 		}
 	}
 
+	// fjdingtest
+
 	cache := schedcache.New(config, schedulerNames, defaultQueue, nodeSelectors)
 	scheduler := &Scheduler{
 		schedulerConf:  schedulerConf,
